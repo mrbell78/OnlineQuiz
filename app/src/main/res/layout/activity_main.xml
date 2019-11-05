@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is the question "
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:id="@+id/questionid"
+        android:layout_above="@+id/answerbuttons"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/answerbuttons"
+        android:padding="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="5dp"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="200dp"
+                android:background="#F57C00"
+                android:layout_marginRight="5dp"
+                android:text="A select ooption "
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:id="@+id/buttona"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+
+
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="200dp"
+                android:background="#F57C00"
+
+                android:text="B select ooption "
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:id="@+id/buttonb"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="5dp"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="200dp"
+                android:background="#F57C00"
+                android:layout_marginRight="5dp"
+                android:text="C select ooption "
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:id="@+id/buttonc"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="200dp"
+                android:background="#F57C00"
+                android:text="D select ooption "
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:id="@+id/buttond"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/tv_time"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:id="@+id/next"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
